@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cetak Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .info {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+
+    @media print {
+      button {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Detail Pembayaran</h2>
+    <div class="info">Nomor Pembayaran: <span class="bold">083838286725</span></div>
+    <div class="info">Nama: <span class="bold">RAZOR PROJECT</span></div>
+    <div class="info">Total Bayar: <span class="bold">Rp 900.000</span></div>
+    <div class="info">Metode: <span class="bold">QRIS / Transfer</span></div>
+    <button onclick="window.print()">Cetak</button>
+  </div>
+</body>
+</html>
